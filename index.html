@@ -1,0 +1,320 @@
+<html>
+    <head>
+<style>
+    .project-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project-card {
+    max-width: 300px;
+}
+
+.project-btn {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.project-btn:hover {
+    background-color: blue;
+}
+    
+
+.hero img {
+    border-radius: 50%;
+    border: 4px solid blue;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+   
+    .hero {
+    padding: 60px 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-in;
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: blue;
+}
+
+.hero h2 {
+    font-size: 28px;
+    color: darkgreen;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.hero-btn:hover {
+    background-color: blue;
+}
+    section {
+    margin: 40px;
+}
+
+.card {
+    background-color: white;
+    width: 250px;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px gray;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 15px;
+    font-weight: normal;
+}
+    nav {
+    background-color: black;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+    .contact-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: green;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.contact-btn:hover {
+    background-color: darkgreen;
+}
+    .links {
+    margin-top: 20px;
+}
+
+.links a {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.links a:hover {
+    background-color: black;
+}
+    .skills {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+
+    img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid blue;
+    object-fit: cover;
+}
+    body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+    h1 {
+        color: blue;
+    }
+
+    h2 {
+        color: darkgreen;
+    }
+
+    p {
+        font-size: 18px;
+    }
+    @media (max-width: 600px) {
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+}
+</style>
+</head>
+<body>
+    <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+<section class="hero">
+
+    <h1>Soniya Sharma</h1>
+    <img src="soniya.jpeg" width="150" height="150">
+
+    <h2>Aspiring Data Analyst</h2>
+
+    <p>
+        BTech CSE Student | Learning Data Analytics, SQL & Web Development
+    </p>
+
+    <a href="#contact" class="hero-btn">
+        Let's Connect
+    </a>
+
+</section>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+Hello! I am Soniya Sharma, a BTech CSE student.
+I am learning Data Analytics, SQL, Excel and Web Development.
+I love building projects and improving my technical skills.
+</p>
+
+</section>
+<section id="projects">
+
+<h2>My Projects</h2>
+
+
+<div class="card project-card">
+
+    <img src="portfolio.png" alt="Portfolio Website">
+
+    <h3>Portfolio Website</h3>
+
+    <p>
+        A personal portfolio website created using HTML and CSS.
+    </p>
+
+    <a href="YOUR_GITHUB_LINK" target="_blank" class="project-btn">
+        View GitHub
+    </a>
+
+</div>
+
+
+
+<div class="card project-card">
+
+    <img src="sql.png" alt="SQL Project">
+
+    <h3>SQL Practice Projects</h3>
+
+    <p>
+        Solved SQL queries and database practice problems.
+    </p>
+
+    <a href="YOUR_GITHUB_LINK" target="_blank" class="project-btn">
+        View GitHub
+    </a>
+
+</div>
+
+
+</section>
+
+<h2>My Skills</h2>
+
+<div class="skills">
+
+    <div class="card">
+        HTML
+    </div>
+
+    <div class="card">
+        CSS
+    </div>
+
+    <div class="card">
+        SQL
+    </div>
+
+    <div class="card">
+        Excel
+    </div>
+
+</div>
+
+
+
+<a href="mailto:your-sharmasoniya8130@gmail.com" class="contact-btn">
+    Contact Me
+</a>
+<div class="links">
+
+    <a href="https://www.linkedin.com/in/soniya-sharma-24b038383/" target="_blank">
+        LinkedIn
+    </a>
+
+    <a href="https://github.com/soniyasharma12" target="_blank">
+        GitHub
+    </a>
+
+</div>
+
+</body>
+
+</html>
