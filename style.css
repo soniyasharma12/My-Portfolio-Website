@@ -1,4 +1,11 @@
-
+/* style.css main file main add karein */
+body {
+    background-color: #121212; /* Ek bohot dark charcoal grey, pure black nahi */
+    color: #e0e0e0;            /* Text ka color light grey taki readability bani rahe */
+    font-family: 'Poppins', sans-serif; /* Ek modern font */
+    margin: 0;
+    padding: 0;
+}
     .project-card img {
     width: 100%;
     height: 150px;
