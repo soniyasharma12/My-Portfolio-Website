@@ -272,3 +272,85 @@ nav a:hover {
     background: #0284c7;
     color: #fff;
 }
+/* ==========================================
+   MOBILE RESPONSIVE STYLES (Screen <= 768px)
+   ========================================== */
+
+@media screen and (max-width: 768px) {
+  
+  /* 1. Global Spacing & Typography Fixes */
+  body {
+    font-size: 15px; /* Text scaling for readability */
+    overflow-x: hidden; /* Horizontal scroll prevent karne ke liye */
+  }
+
+  container, .wrapper, section {
+    width: 100% !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  h1 {
+    font-size: 2rem !important; /* Large desktop titles ko phone-friendly size dena */
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+  }
+
+  /* 2. Navigation Bar Adjustments */
+  nav, .navbar {
+    flex-direction: column;
+    padding: 12px 16px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  /* 3. Layout Grid & Hero Section (Desktop Columns to Mobile Stack) */
+  .hero-section, 
+  .about-container, 
+  .projects-grid, 
+  .skills-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    grid-template-columns: 1fr !important; /* Grid ko 1 column me convert karna */
+    gap: 20px !important;
+  }
+
+  /* 4. Touch Targets (Buttons & Links) */
+  /* Mobile users touch targets should be at least 44px high */
+  button, 
+  .btn, 
+  a.nav-link, 
+  .social-icon {
+    min-height: 44px;
+    min-width: 44px;
+    padding: 12px 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px; /* Tap friendly smooth corners */
+  }
+
+  /* 5. Images & Media Scaling */
+  img, svg, video {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* 6. Card & Project Display Improvements */
+  .card, .project-card {
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 16px;
+  }
+}
